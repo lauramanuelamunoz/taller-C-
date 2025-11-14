@@ -1,0 +1,8 @@
+C:\Users\no se\source\repos\laura muñoz c#\Taller2 modificadores de acceso\Taller2 modificadores de acceso\bin\Debug\Taller2 modificadores de acceso.exe.config
+C:\Users\no se\source\repos\laura muñoz c#\Taller2 modificadores de acceso\Taller2 modificadores de acceso\bin\Debug\Taller2 modificadores de acceso.exe
+C:\Users\no se\source\repos\laura muñoz c#\Taller2 modificadores de acceso\Taller2 modificadores de acceso\bin\Debug\Taller2 modificadores de acceso.pdb
+C:\Users\no se\source\repos\laura muñoz c#\Taller2 modificadores de acceso\Taller2 modificadores de acceso\obj\Debug\Taller2 modificadores de acceso.csproj.AssemblyReference.cache
+C:\Users\no se\source\repos\laura muñoz c#\Taller2 modificadores de acceso\Taller2 modificadores de acceso\obj\Debug\Taller2 modificadores de acceso.csproj.CoreCompileInputs.cache
+C:\Users\no se\source\repos\laura muñoz c#\Taller2 modificadores de acceso\Taller2 modificadores de acceso\obj\Debug\Taller2 modificadores de acceso.exe
+C:\Users\no se\source\repos\laura muñoz c#\Taller2 modificadores de acceso\Taller2 modificadores de acceso\obj\Debug\Taller2 modificadores de acceso.pdb
+C:\Users\no se\source\repos\laura muñoz c#\Taller2 modificadores de acceso\Taller2 modificadores de acceso\obj\Debug\Taller2 modificadores de acceso.exe.config

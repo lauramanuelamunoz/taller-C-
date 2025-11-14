@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Laura c#\Taller completo\Taller completo\bin\Debug\Taller completo.exe.config
+C:\Users\User\source\repos\Laura c#\Taller completo\Taller completo\bin\Debug\Taller completo.exe
+C:\Users\User\source\repos\Laura c#\Taller completo\Taller completo\bin\Debug\Taller completo.pdb
+C:\Users\User\source\repos\Laura c#\Taller completo\Taller completo\obj\Debug\Taller completo.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Laura c#\Taller completo\Taller completo\obj\Debug\Taller completo.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Laura c#\Taller completo\Taller completo\obj\Debug\Taller completo.exe
+C:\Users\User\source\repos\Laura c#\Taller completo\Taller completo\obj\Debug\Taller completo.pdb
