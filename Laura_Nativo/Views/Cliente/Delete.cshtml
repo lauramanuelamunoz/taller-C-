@@ -1,0 +1,43 @@
+﻿@model CRUDNativo.Models.Cliente
+
+<h2>Eliminar Cliente</h2>
+<div>
+    <form method="post" asp-action="Delete" class="control.label">
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="ClienteId" />
+
+        <div>
+            <label asp-for="Nombre"></label>
+            <input asp-for="Nombre" class="form-control" readonly />
+        </div>
+
+        <div>
+            <label asp-for="Apellido"></label>
+            <input asp-for="Apellido" class="form-control" readonly />
+        </div>
+
+        <div>
+            <label asp-for="DocumentoIdentidad"></label>
+            <input asp-for="DocumentoIdentidad" class="form-control" readonly />
+        </div>
+
+        <div>
+            <label asp-for="CorreoElectronico"></label>
+            <input asp-for="CorreoElectronico" class="form-control" readonly />
+        </div>
+
+        <div>
+            <label asp-for="Telefono"></label>
+            <input asp-for="Telefono" class="form-control" readonly />
+        </div>
+
+        <div>
+            <label asp-for="Direccion"></label>
+            <input asp-for="Direccion" class="form-control" readonly />
+        </div>
+
+        <div>
+            <input type="submit" value="Eliminar cliente" class="btn btn-danger" />
+        </div>
+    </form>
+</div>

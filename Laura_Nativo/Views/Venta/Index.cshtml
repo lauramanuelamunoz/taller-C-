@@ -1,0 +1,31 @@
+﻿@model IEnumerable<CRUDNativo.Models.Venta>
+
+<h2>Lista de Ventas</h2>
+<a class="btn btn-success d-block" asp-action="Create" asp-controller="Venta">Registrar Nueva Venta</a>
+
+<table class="table table-bordered mt-3">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(v => v.VentaId)</th>
+            <th>@Html.DisplayNameFor(v => v.Fecha)</th>
+            <th>Cliente</th>
+            <th>Producto</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var venta in Model)
+        {
+            <tr>
+                <td>@venta.VentaId</td>
+                <td>@venta.Fecha.ToShortDateString()</td>
+                <td>@venta.Cliente?.Nombre</td>
+                <td>@venta.Producto?.Nombre</td>
+                <td>
+                    <a class="btn btn-primary" asp-action="Edite" asp-route-id="@venta.VentaId">Editar</a>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@venta.VentaId">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

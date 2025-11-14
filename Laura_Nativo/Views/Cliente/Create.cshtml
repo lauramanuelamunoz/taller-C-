@@ -1,0 +1,42 @@
+﻿@model CRUDNativo.Models.Cliente
+
+<h2>Crear Cliente</h2>
+<div>
+    <form method="post" asp-action="Create" class="control.label">
+        @Html.AntiForgeryToken()
+
+        <div>
+            <label asp-for="Nombre"></label>
+            <input asp-for="Nombre" class="form-control" />
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Apellido"></label>
+            <input asp-for="Apellido" class="form-control" />
+            <span asp-validation-for="Apellido" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="DocumentoIdentidad"></label>
+            <input asp-for="DocumentoIdentidad" class="form-control" />
+            <span asp-validation-for="DocumentoIdentidad" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="CorreoElectronico"></label>
+            <input asp-for="CorreoElectronico" class="form-control" />
+            <span asp-validation-for="CorreoElectronico" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Telefono"></label>
+            <input asp-for="Telefono" class="form-control" />
+            <span asp-validation-for="Telefono" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Direccion"></label>
+            <input asp-for="Direccion" class="form-control" />
+            <span asp-validation-for="Direccion" class="text-danger"></span>
+        </div>
+        <div>
+            <input type="submit" value="Crear cliente" class="btn btn-primary" />
+        </div>
+    </form>
+</div>

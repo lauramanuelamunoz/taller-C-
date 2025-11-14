@@ -1,0 +1,36 @@
+﻿@model CRUDNativo.Models.Producto
+
+<h2>Crear Producto</h2>
+<div>
+    <form method="post" asp-action="Create" class="control.label">
+        @Html.AntiForgeryToken()
+
+        <div>
+            <label asp-for="Nombre"></label>
+            <input asp-for="Nombre" class="form-control" />
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label asp-for="Descripcion"></label>
+            <input asp-for="Descripcion" class="form-control" />
+            <span asp-validation-for="Descripcion" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label asp-for="Precio"></label>
+            <input asp-for="Precio" class="form-control" />
+            <span asp-validation-for="Precio" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label asp-for="Stock"></label>
+            <input asp-for="Stock" class="form-control" />
+            <span asp-validation-for="Stock" class="text-danger"></span>
+        </div>
+
+        <div>
+            <input type="submit" value="Crear producto" class="btn btn-primary" />
+        </div>
+    </form>
+</div>

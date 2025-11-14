@@ -1,0 +1,29 @@
+﻿@model CRUDNativo.Models.Venta
+
+<h2>Editar Venta</h2>
+<form method="post" asp-action="Edite">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="VentaId" />
+
+    <div>
+        <label asp-for="Fecha"></label>
+        <input asp-for="Fecha" class="form-control" type="date" />
+        <span asp-validation-for="Fecha" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>Cliente</label>
+        <select asp-for="ClienteId" class="form-control" asp-items="@(new SelectList(ViewBag.Clientes, "ClienteId", "Nombre"))"></select>
+        <span asp-validation-for="ClienteId" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>Producto</label>
+        <select asp-for="ProductoId" class="form-control" asp-items="@(new SelectList(ViewBag.Productos, "ProductoId", "Nombre"))"></select>
+        <span asp-validation-for="ProductoId" class="text-danger"></span>
+    </div>
+
+    <div>
+        <input type="submit" value="Guardar cambios" class="btn btn-primary" />
+    </div>
+</form>

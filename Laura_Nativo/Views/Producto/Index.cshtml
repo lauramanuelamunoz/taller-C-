@@ -1,0 +1,37 @@
+﻿@model IEnumerable<CRUDNativo.Models.Producto>
+
+<div>
+    <h2>Lista de Productos</h2>
+    <a class="btn btn-success d-block" asp-action="Create" asp-controller="Producto">Crear Nuevo Producto</a>
+</div>
+
+<div class="row">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>@Html.DisplayNameFor(p => p.ProductoId)</td>
+                <td>@Html.DisplayNameFor(p => p.Nombre)</td>
+                <td>@Html.DisplayNameFor(p => p.Descripcion)</td>
+                <td>@Html.DisplayNameFor(p => p.Precio)</td>
+                <td>@Html.DisplayNameFor(p => p.Stock)</td>
+                <td>Acciones</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ProductoId</td>
+                    <td>@item.Nombre</td>
+                    <td>@item.Descripcion</td>
+                    <td>@item.Precio</td>
+                    <td>@item.Stock</td>
+                    <td>
+                        <a class="btn btn-primary" asp-action="Edite" asp-controller="Producto" asp-route-id="@item.ProductoId">Editar</a>
+                        <a class="btn btn-danger" asp-action="Delete" asp-controller="Producto" asp-route-id="@item.ProductoId">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

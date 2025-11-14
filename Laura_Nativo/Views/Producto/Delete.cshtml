@@ -1,0 +1,33 @@
+﻿@model CRUDNativo.Models.Producto
+
+<h2>Eliminar Producto</h2>
+<div>
+    <form method="post" asp-action="Delete" class="control.label">
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="ProductoId" />
+
+        <div>
+            <label asp-for="Nombre"></label>
+            <input asp-for="Nombre" class="form-control" readonly />
+        </div>
+
+        <div>
+            <label asp-for="Descripcion"></label>
+            <input asp-for="Descripcion" class="form-control" readonly />
+        </div>
+
+        <div>
+            <label asp-for="Precio"></label>
+            <input asp-for="Precio" class="form-control" readonly />
+        </div>
+
+        <div>
+            <label asp-for="Stock"></label>
+            <input asp-for="Stock" class="form-control" readonly />
+        </div>
+
+        <div>
+            <input type="submit" value="Eliminar producto" class="btn btn-danger" />
+        </div>
+    </form>
+</div>
